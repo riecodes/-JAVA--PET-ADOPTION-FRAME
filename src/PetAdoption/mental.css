@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Add transition to all elements */
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hdr {
+    text-align: center;
+}
+
+.hdr h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.hdr p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+}
+
+.box:hover {
+    transform: translateY(-5px); /* Add hover effect - move box up */
+}
+
+.mid-box-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.mid-box {
+    padding: 50px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mid-box h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+.mid-box p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+}
+
+.mid-box:hover {
+    transform: translateY(-5px); /* Add hover effect - move box up */
+}
+
+.list-con-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-con {
+    max-width: 800px;
+}
+
+.list-con h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+}
+
+.list-con p,
+.list-con ul {
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.5;
+}
+
+.list-con ul {
+    padding-left: 20px;
+}
+    

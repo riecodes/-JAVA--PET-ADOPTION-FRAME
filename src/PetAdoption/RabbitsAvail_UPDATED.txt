@@ -1,0 +1,100 @@
+package PetAdoption;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Font;
+
+public class RabbitsAvail extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					RabbitsAvail frame = new RabbitsAvail();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public RabbitsAvail() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 801, 598);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(53, 94, 59));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		
+		setResizable(false);
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(73, 125, 267, 384);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setBounds(35, 78, 200, 132);
+		panel.add(lblNewLabel);
+		lblNewLabel.setIcon(new ImageIcon("C:\\Pet Adopt Pics\\bonnie.jpg"));
+		
+		JButton btnNewButton = new JButton("Bonnie");
+		btnNewButton.setFont(new Font("Calibri", Font.BOLD, 20));
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setBounds(77, 24, 96, 32);
+		panel.add(btnNewButton);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(436, 125, 267, 384);
+		contentPane.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setBounds(35, 77, 207, 133);
+		panel_1.add(lblNewLabel_1);
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Pet Adopt Pics\\Bevvie.jpg"));
+		
+		JButton btnNewButton_1 = new JButton("Bevvie");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_1.setFont(new Font("Calibri", Font.BOLD, 20));
+		btnNewButton_1.setBounds(88, 27, 96, 30);
+		panel_1.add(btnNewButton_1);
+		
+		JLabel lblNewLabel_3 = new JLabel("Available Rabbit to Adopt");
+		lblNewLabel_3.setFont(new Font("Arial Rounded MT Bold", Font.PLAIN, 30));
+		lblNewLabel_3.setBounds(221, 39, 386, 36);
+		contentPane.add(lblNewLabel_3);
+		
+		JPanel panel_3 = new JPanel();
+		panel_3.setBackground(new Color(255, 255, 255));
+		panel_3.setBounds(180, 26, 451, 60);
+		contentPane.add(panel_3);
+	}
+}
